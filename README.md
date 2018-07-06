@@ -38,6 +38,13 @@ Add the ServiceProvider to the providers array in config/app.php
 Jozwikp\Flexcms\FlexcmsServiceProvider::class,
 ```
 
+Add this line to the end of your routes/web.php
+
+```sh
+Route::any('{path}', '\Jozwikp\Flexcms\controllers\PathController@resolve')->where('path', '(.*)');
+```
+
+
 Add admin user with:
 
 ```sh
