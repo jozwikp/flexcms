@@ -4,9 +4,18 @@ Flexcms is simple and flexible yet powerful Laravel functionality.! It lets you 
 
 Every page can exist within the list or separately. You can build a blog with categories or a lonely contact page.
 
+# Full feature list
+
+- Use of standard authentication and user account but separated logic of admin and author - no changes to your User model
+- Use of routes fallback gives you the unlimited paths flexibility
+- Blade templates for lists and pages
+- Pages as part of lists or standalone Pages
+- Full SEO support with meta title end description
+- Laravel cache for Pages and Lists - 0 database queries for page or list display
+- Simple but powerful Admin and Author panel
+- Easy to understand, publish and customization
 
 ### Flexible paths
-
 
 The most important thing is that you can have a page or a list with whatever url you like for example:
 - /my-page
@@ -17,15 +26,15 @@ The most important thing is that you can have a page or a list with whatever url
 
 ### Separated
 
-Secondly, Flexcms doesn't change any of the existing Laravel app. You don't even have to add anything to User model.
+Flexcms doesn't change any of the existing Laravel app. You don't even have to add anything to User model.
 
 ### Styleable
 
-The last thing is the templates. Every List or Page can have its own blade template.
+Every List or Page can have its own blade template.
 
 ### Cached
 
-The last, last thing is the fact that Flexcms is ultra fast. Every Page and List is fully cached. No database request.
+Flexcms is ultra fast. Every Page and List is fully cached. No database request.
 
 
 ### Installation
@@ -33,7 +42,7 @@ The last, last thing is the fact that Flexcms is ultra fast. Every Page and List
 Laravel 5.6 with standard Authentication
 
 ```sh
-composer require --dev jozwikp/flexcms
+composer require jozwikp/flexcms
 ```
 
 Add basic authentication
