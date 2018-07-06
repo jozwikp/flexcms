@@ -30,12 +30,24 @@ The last, last thing is the fact that Flexcms is ultra fast. Every Page and List
 
 ### Installation
 
-Laravel 5.6
+Laravel 5.6 with standard Authentication
 
 Add the ServiceProvider to the providers array in config/app.php
 
 ```sh
 Jozwikp\Flexcms\FlexcmsServiceProvider::class,
+```
+
+Add this line to the end of your routes/web.php
+
+```sh
+Route::any('{path}', '\Jozwikp\Flexcms\controllers\PathController@resolve')->where('path', '(.*)');
+```
+
+Run migrations
+
+```sh
+php artisan migrate
 ```
 
 Add admin user with:

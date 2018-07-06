@@ -8,5 +8,11 @@
             "email": "jozwik@dev.pl"
         }
     ],
-    "require": {}
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Jozwikp\\Flexcms\\": "src/"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
 }
