@@ -82,3 +82,38 @@ $ php artisan storage:link
 ```
 
 Login to your app and go to /flexcms
+
+### Next steps
+
+Share the lists with the views in your AppServiceProvider.php boot() method
+
+```sh
+$lists = Cache::rememberForever('lists', function() {
+          return Liist::with('siblings')->whereNull('parent_id')->get();
+        });
+view()->share('lists', $lists);
+```
+
+Include partials in your template (parent lists)
+```sh
+@include('flexcms::_lists')
+```
+or (parents with siblings)
+```sh
+@include('flexcms::_lists-siblings')
+```
+        
+### Customize the default views
+
+Publish the views 
+
+```sh
+php artisan vendor:publish
+```
+
+list-default.blade.php
+page-default.blade.php
+
+
+If you need other type of views you can copy default views and change default into other name. Use your new name while editing lists or pages.
+
