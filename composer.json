@@ -1,0 +1,12 @@
+{
+    "name": "jozwikp/flexcms",
+    "description": "Flexible CMS",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Paweł Jóźwik",
+            "email": "jozwik@dev.pl"
+        }
+    ],
+    "require": {}
+}
