@@ -32,6 +32,16 @@ The last, last thing is the fact that Flexcms is ultra fast. Every Page and List
 
 Laravel 5.6 with standard Authentication
 
+```sh
+composer require --dev jozwikp/flexcms
+```
+
+Add basic authentication
+
+```sh
+php artisan make:auth
+```
+
 Add the ServiceProvider to the providers array in config/app.php
 
 ```sh
