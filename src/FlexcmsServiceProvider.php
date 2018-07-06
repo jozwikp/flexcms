@@ -32,12 +32,13 @@ class FlexcmsServiceProvider extends ServiceProvider
             ]);
         }
 
+        /*
         $lists = Cache::rememberForever('lists', function() {
           return Liist::with('siblings')->whereNull('parent_id')->get();
         });
 
         view()->share('lists', $lists);
-
+        */
         //$this->aliasMiddleware('isadmin' , __DIR__.'/middleware/'.IsAdmin::class);
         //$this->aliasMiddleware('isauthor' , __DIR__.'/middleware/'.IsAuthor::class);
     }
